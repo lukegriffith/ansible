@@ -1,5 +1,7 @@
 ---
-- hosts: windows
+- name: package installs
+	hosts: windows
+	tasks:
   	- name: ensure git is installed
 		 # Install git
 		 win_chocolatey:

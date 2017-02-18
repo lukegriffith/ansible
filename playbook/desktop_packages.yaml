@@ -5,7 +5,6 @@
   hosts: windows
   gather_facts: false
   tasks:
-
     - name: Installing GIT.
 		win_chocolatey:
 			name: git

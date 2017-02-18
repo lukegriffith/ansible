@@ -5,9 +5,10 @@
   hosts: windows
   gather_facts: false
   tasks:
-  	- name: Installing GIT.
-    win_chocolatey:
-	 name: git
+
+    - name: Installing GIT.
+      win_chocolatey:
+	   name: git
 	- name: Installing notepad++
-    win_chocolatey:
-	 name: notepadplusplus.install
+      win_chocolatey:
+	   name: notepadplusplus.install

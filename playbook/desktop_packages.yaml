@@ -1,9 +1,11 @@
 ---
+# Installs chocolatey packages.
+
 - name: package installs
-	hosts: windows
-	tasks:
-         - win_chocolatey:
-		   name: git
-	
-       	 - win_chocolatey:
-		   name: notepadplusplus.install
+  hosts: windows
+  gather_facts: false
+  tasks:
+    - win_chocolatey:
+	 name: git
+    - win_chocolatey:
+	 name: notepadplusplus.install

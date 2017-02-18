@@ -6,4 +6,4 @@
   gather_facts: false
   tasks:
     - name: Run powershell script
-      script: files/test_playbook_script.ps1
+      script: D:\git\ansible\files\test_playbook_script.ps1

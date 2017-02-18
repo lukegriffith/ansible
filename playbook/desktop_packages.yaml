@@ -1,0 +1,14 @@
+----
+- hosts: windows
+	name: ensure git is installed
+
+
+	# Install git
+	win_chocolatey:
+	  name: git
+
+	# Install notepadplusplus version 6.6
+	win_chocolatey:
+	  name: notepadplusplus.install
+	  version: '6.6'
+

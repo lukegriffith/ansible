@@ -6,5 +6,5 @@
   gather_facts: false
   tasks:
     - name: GIT install.
-    win_chocolatey:
-      name: git
+      win_chocolatey:
+        name: git

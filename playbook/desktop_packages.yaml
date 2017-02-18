@@ -2,8 +2,8 @@
 - name: package installs
 	hosts: windows
 	tasks:
-         -win_chocolatey:
+         - win_chocolatey:
 		   name: git
 	
-       	 -win_chocolatey:
+       	 - win_chocolatey:
 		   name: notepadplusplus.install

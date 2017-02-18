@@ -2,12 +2,8 @@
 - name: package installs
 	hosts: windows
 	tasks:
-  	- name: ensure git is installed
-		 # Install git
-		 win_chocolatey:
+         -win_chocolatey:
 		   name: git
-		 # Install notepadplusplus version 6.6
-		- name: ensure npp is installed
-		 win_chocolatey:
+	
+       	 -win_chocolatey:
 		   name: notepadplusplus.install
-		   version: '6.6'

@@ -5,5 +5,11 @@
   hosts: windows
   gather_facts: false
   tasks:
+
+    - name: Copy files/test_playbook_script.ps1 to c:\temp
+      win_copy:
+        src: files/test_playbook_script.ps1
+        dest: c:\Temp
+      
     - name: Run powershell script
-      script: D:\git\ansible\files\test_playbook_script.ps1
+      script: c:\Temp\test_playbook_script.ps1

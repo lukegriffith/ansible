@@ -1,0 +1,12 @@
+
+- name: Configure Infra 
+  hosts: grc 
+  gather_facts: false
+  tasks:
+    - name: copy DSC Config
+      win_copy:
+        src: /Users/luke/GitHub/ansible/grcloud/Infra
+        dest: "c:\\Configuration"
+    - name: Execute Configuration
+      script: /Users/luke/GitHub/ansible/grcloud/Infra/compile.ps1
+      

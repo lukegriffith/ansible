@@ -1,0 +1,13 @@
+
+- name: Configure Infra 
+  hosts: grc 
+  gather_facts: false
+  tasks:
+    - name: copy xDhcpServer
+      win_copy:
+        src: /Users/luke/GitHub/ansible/files/psmod/xDhcpServer
+        dest: "c:\\Program Files\\WindowsPowerShell\\Modules"      
+    - name: copy xNetworking
+      win_copy:
+        src: /Users/luke/GitHub/ansible/files/psmod/xNetworking
+        dest: "c:\\Program Files\\WindowsPowerShell\\Modules"    

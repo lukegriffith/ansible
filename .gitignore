@@ -1,1 +1,3 @@
 group_vars/windows.yaml
+testcon.py
+files/psmod

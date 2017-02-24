@@ -1,0 +1,9 @@
+
+- name: Configure Infra 
+  hosts: windows
+  gather_facts: false
+  tasks:
+    - name: copy iso
+      win_copy:
+        src: /Users/luke/Desktop/en-gb_windows_10_enterprise_2016_ltsb_n_x64_dvd_9058303.iso
+        dest: c:\\Temp\\en-gb_windows_10_enterprise_2016_ltsb_n_x64_dvd_9058303.iso
